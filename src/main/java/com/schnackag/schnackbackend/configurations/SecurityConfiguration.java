@@ -22,7 +22,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true, jsr250Enabled = true, securedEnabled = true)
+@EnableMethodSecurity(jsr250Enabled = true, securedEnabled = true)
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 	private final AuthenticationProvider authenticationProvider;
