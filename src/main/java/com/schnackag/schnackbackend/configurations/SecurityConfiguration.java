@@ -77,8 +77,8 @@ public class SecurityConfiguration {
 
 						// Erlaube anonyme Anfragen an /api/v1/auth/login und register.
 						// Damit ist es möglich Login- und Registrierungsanfragen zu senden.
-						.requestMatchers("/api/v1/auth/login").permitAll()
-						.requestMatchers("/api/v1/auth/register").permitAll()
+						.requestMatchers("/api/v1/authentication/login").permitAll()
+						.requestMatchers("/api/v1/authentication/register").permitAll()
 
 						// Jeder andere Request muss authentifiziert sein.
 						.anyRequest().authenticated())
