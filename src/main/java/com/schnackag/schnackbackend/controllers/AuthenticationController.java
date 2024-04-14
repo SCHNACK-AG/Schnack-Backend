@@ -25,7 +25,6 @@ public class AuthenticationController {
 		return ResponseEntity.ok(authenticationService.authenticate(request));
 	}
 
-	@Secured({"USER", "MODERATOR", "ADMINISTRATOR"})
 	@GetMapping("/authenticated")
 	public ResponseEntity<Boolean> isAuthenticated() {
 		return ResponseEntity.ok(true);
