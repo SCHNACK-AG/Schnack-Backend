@@ -5,7 +5,8 @@
 ### Die Umgebungsvariable für das Datenbank-Passwort erstellen
 
 - Die Windows Eingabeaufforderung öffnen und den folgenden Befehl ausführen: <br>
-  `set SCHNACK_DATABASE_PASSWORD=EuerPasswort`
+  `set SCHNACK_DATABASE_PASSWORD=EuerPasswort` (Wird nach dem schliessen der Konsole wieder gelöscht)
+- In den Umgebungsvariablen der Windowseinstellungen den Eintrag vornehmen (Bleibt dauerhaft)
 
 ### (Datenbank Variante 1) Die MySQL-Datenbank in einen Docker Container erstellen
 
