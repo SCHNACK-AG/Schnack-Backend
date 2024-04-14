@@ -75,9 +75,10 @@ public class SecurityConfiguration {
 				// Sicherheitsregeln für Requests.
 				.authorizeHttpRequests(auth -> auth
 
-						// Erlaube anonyme Anfragen an /api/v1/auth/**.
+						// Erlaube anonyme Anfragen an /api/v1/auth/login und register.
 						// Damit ist es möglich Login- und Registrierungsanfragen zu senden.
-						.requestMatchers("/api/v1/auth/**").permitAll()
+						.requestMatchers("/api/v1/auth/login").permitAll()
+						.requestMatchers("/api/v1/auth/register").permitAll()
 
 						// Jeder andere Request muss authentifiziert sein.
 						.anyRequest().authenticated())
